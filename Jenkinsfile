@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { docker {image 'python:3.9.6'}}
 
     stages {
 
@@ -12,7 +12,7 @@ pipeline {
                     currentBuild.displayName = "Python-Demo-#${BUILD_NUMBER}"
                 }
 
-                 
+                 sh "chmod +x -R ${env.WORKSPACE}"
 
                 sh "sudo ./script.sh"
             }

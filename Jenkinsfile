@@ -12,8 +12,8 @@ pipeline {
                     currentBuild.displayName = "Python-Demo-#${BUILD_NUMBER}"
                 }
 
-                 sh "chmod +x -R ${env.WORKSPACE}"
                  
+
                 sh "./script.sh"
             }
         }

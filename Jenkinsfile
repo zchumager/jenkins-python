@@ -2,9 +2,12 @@ pipeline {
     agent any
 
     stages {
+
+        currentBuild.displayName = "Python-Demo-#${BUILD_NUMBER}"
+
         stage("Executing Program") {
             steps {
-                print("Build number: ${BUILD_NUMBER}")
+                print("Build number: ${currentBuild.displayName}")
             }
         }
     }

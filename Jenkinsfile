@@ -12,7 +12,7 @@ pipeline {
                     currentBuild.displayName = "Python-Demo-#${BUILD_NUMBER}"
                 }
 
-                sh ./script.sh
+                sh "./script.sh"
             }
         }
     }

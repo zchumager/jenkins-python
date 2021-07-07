@@ -11,6 +11,8 @@ pipeline {
                     // changing display name for job
                     currentBuild.displayName = "Python-Demo-#${BUILD_NUMBER}"
                 }
+                
+                sh "chmod -x ./script.sh"
 
                 sh "./script.sh"
             }

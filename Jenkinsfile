@@ -14,7 +14,7 @@ pipeline {
 
                  
 
-                sh "./script.sh"
+                sh "sudo ./script.sh"
             }
         }
     }

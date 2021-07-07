@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage("Executing Program") {
             steps {
-                print("Hello World")
+                print("Build number: ${BUILD_NUMBER}")
             }
         }
     }

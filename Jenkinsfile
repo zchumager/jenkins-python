@@ -3,7 +3,9 @@ pipeline {
 
     stages {
         stage("Executing Program") {
-            echo "Hello World"
+            steps {
+                print("Hello World")
+            }
         }
     }
 }

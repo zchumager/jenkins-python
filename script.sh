@@ -8,4 +8,6 @@ python3 -m pip install --user pipenv
 
 python3 -m pipenv install requests
 
+python3 -m pipenv shell
+
 python3 app.py

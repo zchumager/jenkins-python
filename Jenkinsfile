@@ -14,7 +14,7 @@ pipeline {
 
                  sh "chmod +x -R ${env.WORKSPACE}"
 
-                sh "sudo ./script.sh"
+                sh "python3 --version"
             }
         }
     }

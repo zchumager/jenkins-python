@@ -10,4 +10,4 @@ python3 -m pip install --user pipenv
 
 python3 -m pipenv install requests
 
-python3 -m pipenv run python app.py
+python3 -m pipenv run python app.py $1

@@ -3,3 +3,8 @@ The docker-compose.yml is used as an alternative to run a container with a comma
 
 Execute docker-compose 
 > docker-compose up
+
+Parameters in shellscript are referenced by a number, for instance $1 means first parameter passed next by the script execution
+
+Parameters in python are accessed by sys module, they are referenced as a list. First element is the script name
+so first argument is referenced by index 1, for instance sys.argv[1]

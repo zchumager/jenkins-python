@@ -11,7 +11,7 @@ pipeline {
                     currentBuild.displayName = "Python-Demo-#${BUILD_NUMBER}"
                 }
 
-                print("URL: ${url}")
+                print("URL Parameter: ${url}")
 
                 sh "bash script.sh ${url}"
             }

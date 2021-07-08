@@ -1,2 +1,5 @@
+The Dockerfile is used for enhancing an existing image installing not included packages
+The docker-compose.yml is used as an alternative to run a container with a command
+
 Execute docker-compose 
 > docker-compose up

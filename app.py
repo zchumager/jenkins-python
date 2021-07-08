@@ -2,6 +2,7 @@ import sys
 import requests
 from pprint import pprint
 
+
 def main():
     print("Executing Python Module")
 
@@ -14,6 +15,7 @@ def main():
     result = requests.get(url)
     
     pprint(result.json())
+
 
 if __name__ == "__main__":
     main()

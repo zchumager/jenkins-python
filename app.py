@@ -1,3 +1,4 @@
+import requests
 
 def main():
     print("Executing Python Module")

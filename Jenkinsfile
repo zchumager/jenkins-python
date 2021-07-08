@@ -15,6 +15,8 @@ pipeline {
                  sh "chmod +x -R ${env.WORKSPACE}"
 
                 sh "python3 --version"
+                
+                sh "python3 app.py"
             }
         }
     }

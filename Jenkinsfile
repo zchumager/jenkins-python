@@ -2,9 +2,6 @@ pipeline {
     agent any
 
     stages {
-
-        
-
         stage("Executing Program") {
             steps {
                 script {
@@ -12,11 +9,7 @@ pipeline {
                     currentBuild.displayName = "Python-Demo-#${BUILD_NUMBER}"
                 }
 
-                 sh "chmod +x -R ${env.WORKSPACE}"
-
-                sh "python3 --version"
-                
-                sh "python3 app.py"
+                sh "bash script.sh"
             }
         }
     }

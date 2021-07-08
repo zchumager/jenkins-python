@@ -1,3 +1,5 @@
+def url = params.URL
+
 pipeline {
     agent any
 
@@ -9,7 +11,7 @@ pipeline {
                     currentBuild.displayName = "Python-Demo-#${BUILD_NUMBER}"
                 }
 
-                print("URL: ${params.URL}")
+                print("URL: ${url}")
 
                 sh "bash script.sh"
             }

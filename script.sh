@@ -1,5 +1,7 @@
 echo "Executing Shellscript"
 
+echo "parameter from pipeline $1"
+
 apt-get install python3-pip -y
 
 python3 -m pip install --upgrade pip setuptools wheel

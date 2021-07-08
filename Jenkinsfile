@@ -13,7 +13,7 @@ pipeline {
 
                 print("URL: ${url}")
 
-                sh "bash script.sh"
+                sh "bash script.sh ${url}"
             }
         }
     }

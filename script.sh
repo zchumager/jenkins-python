@@ -6,8 +6,8 @@ python3 -m pip install --upgrade pip setuptools wheel
 
 python3 -m pip install --user pipenv
 
-python3 -m pipenv install requests
-
 python3 -m pipenv shell
+
+python3 -m pipenv install requests
 
 python3 app.py

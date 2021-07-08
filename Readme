@@ -8,3 +8,7 @@ Parameters in shellscript are referenced by a number, for instance $1 means firs
 
 Parameters in python are accessed by sys module, they are referenced as a list. First element is the script name
 so first argument is referenced by index 1, for instance sys.argv[1]
+
+URL used for python app
+https://jsonplaceholder.typicode.com/posts
+https://swapi.dev/api/people

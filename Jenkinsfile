@@ -1,3 +1,4 @@
+// string parameter
 def url = params.URL
 
 pipeline {
